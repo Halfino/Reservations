@@ -1,0 +1,23 @@
+<section id="content">
+  <article id="text">
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Tite:</strong>
+  <%= @room.tite %>
+</p>
+
+<p>
+  <strong>Code:</strong>
+  <%= @room.code %>
+</p>
+
+<p>
+  <strong>Buildingid:</strong>
+  <%= @room.building.title %>
+</p>
+
+<%= link_to 'Edit', edit_building_room_path(@building,@room) %> |
+<%= link_to 'Back', building_rooms_path(@building) %>
+  </article>
+</section>

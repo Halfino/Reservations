@@ -1,0 +1,6 @@
+<h1>Pages#room_schedule</h1>
+<p>Find me in app/views/pages/room_schedule.html.erb</p>
+<%= @room.tite %><br>
+<% @lessons.each do |lesson| %>
+<%= lesson.start_at %> az <%= lesson.end_at %><br>
+<%end%>

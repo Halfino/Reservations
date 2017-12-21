@@ -1,0 +1,32 @@
+<section id="content">
+  <article id="text">
+<p id="notice"><%= notice %></p>
+
+<h1>Buildings</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Code</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @buildings.each do |building| %>
+      <tr>
+        <td><%= building.title %></td>
+        <td><%= building.code %></td>
+        <td><%= link_to 'Show', building %></td>
+        <td><%= link_to 'Prehled dne', pages_day_schedule_path(:building_id => building.id) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Building', new_building_path %>
+  </article>
+</section>

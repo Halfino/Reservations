@@ -1,0 +1,190 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+body {
+    background-color: #9E9EF9;
+}
+
+#head {
+    margin: auto;
+    width: 75%px;
+}
+
+#menu {
+    margin: auto;
+    width: 75%;
+    background-color: #5253F8;
+}
+
+nav {
+    margin-left: 0.35%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+    font-weight: regular;
+    height: 50px;
+}
+/* CSS style for reference buttons*/
+.menu-button {
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    background-color: #5253F8;
+    color: white;
+    display: inline-block;
+    width: 15%;
+}
+
+.menu-button:LINK,#menu-button:VISITED {
+    background-color: #5253F8;
+    color: white;
+}
+
+.menu-button:HOVER,#menu-button:ACTIVE {
+    background-color: white;
+    color: #5253F8;
+}
+
+.button-actual {
+    text-align: center;
+    line-height: 50px;
+    background-color: #8D8DDE;
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    width: 15%;
+}
+
+.button-actual:HOVER {
+    background-color: white;
+}
+
+#content {
+    margin: auto;
+    width: 74.5%;
+    background-color: #5253F8;
+    padding-left: 0.25%;
+    padding-right: 0.25%;
+}
+
+#text {
+    width: 73%;
+    float: left;
+    background-color: white;
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    border-right: 1% solid #5253F8;
+}
+
+#right-column {
+    width: 22%;
+    float: right;
+    background-color: white;
+}
+
+#foot {
+    width: 100%;
+    line-height: 0.5px;
+    text-align: center;
+    display: inline-block;
+    border-top: 2px solid #9E9EF9;
+}
+/* style of right column text */
+.text-right {
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+}
+/* style of content text */
+.text {
+    padding-right: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+h1 {
+    color: #5355C5;
+    font-size: 1.5em;
+    line-height: 2px;
+}
+
+h2 {
+    color: #5355C5;
+    font-weight: normal;
+    line-height: 2px;
+}
+/* style of title in right box */
+.h-right {
+    padding-left: 2%;
+    padding-top: 4%;
+    color: #5355C5;
+    font-weight: normal;
+    line-height: 2px;
+}
+
+/* table */
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+}
+th, td {
+    padding: 0%;
+    width: 5%
+}
+th{
+    background-color: #5355C5;
+}
+tr:nth-child(even) {
+    background-color: #B3B5F9;
+}
+
+.table-button {
+
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    text-align: center;
+}
+
+.table-button:hover{
+    background-color: #575778;
+    color: white;
+}
+
+/* ul-li navigation styling */
+ul {
+    list-style-type: none;
+    margin-top: 1%;
+    padding: 0%;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: grey;
+}

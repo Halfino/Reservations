@@ -1,0 +1,9 @@
+<section id="content">
+  <article id="text">
+<h1>New Room for <%=@building.title%></h1>
+
+<%= render 'form', room: @room %>
+
+<%= link_to 'Back', building_rooms_path(@building) %>
+  </article>
+</section>

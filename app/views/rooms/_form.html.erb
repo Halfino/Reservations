@@ -1,0 +1,14 @@
+<%= simple_form_for([@building,@room]) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :tite %>
+    <%= f.input :code %>
+    <%= f.association :building, selected: @building.id, input_html: {hidden: true}, label: "Room is associated to #{@building.title}" %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
+
